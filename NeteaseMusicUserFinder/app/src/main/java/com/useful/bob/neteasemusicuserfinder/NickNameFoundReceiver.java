@@ -9,6 +9,7 @@ import android.widget.Toast;
  * 网易云音乐id已找到广播接收器
  * 但是没用到
  */
+@Deprecated
 public class NickNameFoundReceiver extends BroadcastReceiver {
 
     private static final String NICKNAME_FOUND_ACTION="NETEASEMUSICUSERNAMEFOUND";

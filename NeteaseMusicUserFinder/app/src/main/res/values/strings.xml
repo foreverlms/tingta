@@ -1,3 +1,820 @@
 <resources>
     <string name="app_name">听ta</string>
+    <string name="toast_message_for_no_internet">联网后再试吧~~</string>
+    <string name="hint_for_linkEditText">粘贴已有网易云歌曲微信分享链接</string>
+
+    <string-array name="songs">
+        <item>有心人</item>
+        <item>29343372</item>
+        <item>I'm Your Man</item>
+        <item>20954632</item>
+        <item>(Youre The)Love Of My Life</item>
+        <item>5201812</item>
+        <item>奇妙能力歌</item>
+        <item>30431366</item>
+        <item>记念(Live)</item>
+        <item>29122982</item>
+        <item>借我</item>
+        <item>408814900</item>
+        <item>喜剧之王</item>
+        <item>385615</item>
+        <item>飞鱼</item>
+        <item>375467</item>
+        <item>500 miles</item>
+        <item>5186889</item>
+        <item>Auld Lang Syne</item>
+        <item>1146770</item>
+        <item>Just The Two Of Us</item>
+        <item>1090113</item>
+        <item>寂寞在唱歌</item>
+        <item>205267</item>
+        <item>你和我的时光</item>
+        <item>326799</item>
+        <item>掉了 (Live)</item>
+        <item>26075395</item>
+        <item>Sing You To Sleep</item>
+        <item>27583241</item>
+        <item>取暖</item>
+        <item>187680</item>
+        <item>小时候</item>
+        <item>25986219</item>
+        <item>Hot!</item>
+        <item>413812125</item>
+        <item>凤凰花开的路口</item>
+        <item>109734</item>
+        <item>Nothing’s Changed</item>
+        <item>31517171</item>
+        <item>Nobody Loves You (When You're Down And Out)</item>
+        <item>1475363</item>
+        <item>Oh My Love</item>
+        <item>1475050</item>
+        <item>A Place Nearby</item>
+        <item>22566555</item>
+        <item>说了再见以后</item>
+        <item>27731537</item>
+        <item>The Clouds in Camarillo</item>
+        <item>1084295</item>
+        <item>相爱很难(电影"男人四十"歌曲)</item>
+        <item>36861904</item>
+        <item>似水流年</item>
+        <item>188591</item>
+        <item>爱你就像爱生命</item>
+        <item>427016671</item>
+        <item>背着你</item>
+        <item>375353</item>
+        <item>天天晴朗</item>
+        <item>27543051</item>
+        <item>Space Oddity</item>
+        <item>1218773</item>
+        <item>You Raise Me Up</item>
+        <item>20707713</item>
+        <item>Forever</item>
+        <item>3028500</item>
+        <item>可爱的玫瑰花 (Live)</item>
+        <item>374786</item>
+        <item>Send</item>
+        <item>4880435</item>
+        <item>All Falls Down</item>
+        <item>515453363</item>
+        <item>Titanium</item>
+        <item>3406918</item>
+        <item>Lemon</item>
+        <item>536622304</item>
+        <item>Wisdom</item>
+        <item>4344799</item>
+        <item>Without You</item>
+        <item>3029019</item>
+        <item>23时59分</item>
+        <item>740010</item>
+        <item>ぼくら</item>
+        <item>31273654</item>
+        <item>青い宝</item>
+        <item>22748787</item>
+        <item>Closer</item>
+        <item>4330176</item>
+        <item>Sittin' Here In Silence (On My Own)</item>
+        <item>17822810</item>
+        <item>Teenage Life</item>
+        <item>1231775</item>
+        <item>Better Man</item>
+        <item>22463223</item>
+        <item>其实都没有</item>
+        <item>25788001</item>
+        <item>当我们一起走过</item>
+        <item>374612</item>
+        <item>That Wasn't Me</item>
+        <item>16783851</item>
+        <item>The Story</item>
+        <item>16783822</item>
+        <item>カサネテク</item>
+        <item>474739593</item>
+        <item>Ship In The Sand</item>
+        <item>26511658</item>
+        <item>Pop Culture</item>
+        <item>1784591</item>
+        <item>Shutterbug</item>
+        <item>428203132</item>
+        <item>好きだよ。~100回の後悔~ (English Ver.)</item>
+        <item>28613731</item>
+        <item>生きていたんだよな</item>
+        <item>443875380</item>
+        <item>Sick Boy</item>
+        <item>530801983</item>
+        <item>On a Slow Boat to China</item>
+        <item>27591140</item>
+        <item>Promises Don't Come Easy</item>
+        <item>5197154</item>
+        <item>Brother Louie</item>
+        <item>4175444</item>
+        <item>Dreams</item>
+        <item>4330110</item>
+        <item>漫步人生路</item>
+        <item>229285</item>
+        <item>仙才叹</item>
+        <item>528270432</item>
+        <item>Never Forget</item>
+        <item>516358188</item>
+        <item>Starry Starry Night</item>
+        <item>507783538</item>
+        <item>Give Me Some Love</item>
+        <item>18658931</item>
+        <item>你喔！</item>
+        <item>5236540</item>
+        <item>新年快乐</item>
+        <item>524148556</item>
+        <item>Wasted</item>
+        <item>16783825</item>
+        <item>Take me hand</item>
+        <item>26092806</item>
+        <item>涙そうそう</item>
+        <item>22783456</item>
+        <item>初恋</item>
+        <item>29750519</item>
+        <item>いつも何度でも</item>
+        <item>584155</item>
+        <item>Amireux</item>
+        <item>1383635</item>
+        <item>三线の花</item>
+        <item>694286</item>
+        <item>あの頃～ジンジンバオヂュオニー～</item>
+        <item>405998841</item>
+        <item>PLANET</item>
+        <item>812400</item>
+        <item>小さな恋のうた</item>
+        <item>28029647</item>
+        <item>3年目の浮気</item>
+        <item>4902185</item>
+        <item>B What U Wanna B</item>
+        <item>1217823</item>
+        <item>Flowers</item>
+        <item>413834087</item>
+        <item>21 Guns</item>
+        <item>18127555</item>
+        <item>On écrit sur les murs</item>
+        <item>36607898</item>
+        <item>追光者</item>
+        <item>483671599</item>
+        <item>Love Yourself (Natio Remix)</item>
+        <item>410801521</item>
+        <item>808 (Jack Novak Remix)</item>
+        <item>422419047</item>
+        <item>Yellow</item>
+        <item>17177324</item>
+        <item>Beautiful World</item>
+        <item>20707408</item>
+        <item>My Love(Radio Edit)</item>
+        <item>2081057</item>
+        <item>I Want It That Way</item>
+        <item>3950552</item>
+        <item>流星</item>
+        <item>186683</item>
+        <item>天高地厚</item>
+        <item>387758</item>
+        <item>Traveling Light</item>
+        <item>1491585</item>
+        <item>You Are a Lover</item>
+        <item>28228088</item>
+        <item>Blind Tom</item>
+        <item>17982528</item>
+        <item>All Out Of Love</item>
+        <item>3881330</item>
+        <item>A New Light ~ message in a bottle</item>
+        <item>812698</item>
+        <item>美丽心情</item>
+        <item>207254</item>
+        <item>爱很简单</item>
+        <item>5267256</item>
+        <item>Donna Donna</item>
+        <item>5183690</item>
+        <item>惠化洞（Cover：朴宝蓝）</item>
+        <item>451536969</item>
+        <item>Right Here Waiting</item>
+        <item>3313653</item>
+        <item>Nothing's Gonna Change My Love For You</item>
+        <item>2080326</item>
+        <item>3 O'clock in the Morning</item>
+        <item>1519879</item>
+        <item>Four To The Floor</item>
+        <item>22622207</item>
+        <item>Do No Wrong</item>
+        <item>19282073</item>
+        <item>Time</item>
+        <item>33035611</item>
+        <item>Love And Death in the Afternoon</item>
+        <item>1519913</item>
+        <item>Indian Summer</item>
+        <item>25730836</item>
+        <item>In My Secret Life</item>
+        <item>20954450</item>
+        <item>Creep</item>
+        <item>22605222</item>
+        <item>Misfit</item>
+        <item>452620634</item>
+        <item>Hero</item>
+        <item>28784401</item>
+        <item>Love Me Like There's No Tomorrow</item>
+        <item>1348599</item>
+        <item>I Don't Mind If You Don't Mind</item>
+        <item>27472194</item>
+        <item>Clouds</item>
+        <item>26418207</item>
+        <item>大明宫</item>
+        <item>125826</item>
+        <item>She Is Gone</item>
+        <item>2081707</item>
+        <item>Unbelievable</item>
+        <item>32835004</item>
+        <item>Across 110th Street</item>
+        <item>5056077</item>
+        <item>Going To A Town</item>
+        <item>21529442</item>
+        <item>Die Internationale</item>
+        <item>18267037</item>
+        <item>Knockin' On Heaven's Door</item>
+        <item>18095057</item>
+        <item>Relax, Take It Easy</item>
+        <item>21151698</item>
+        <item>世界末日</item>
+        <item>186109</item>
+        <item>Toilet Story 3</item>
+        <item>29713902</item>
+        <item>Toilet Story 4</item>
+        <item>29713903</item>
+        <item>Stay</item>
+        <item>26350977</item>
+        <item>Forevermore</item>
+        <item>2872362</item>
+        <item>Open Up Your Heart And Let The Sun Shine In</item>
+        <item>29561089</item>
+        <item>Lost control</item>
+        <item>27598102</item>
+        <item>Never Gonna Be Alone</item>
+        <item>21267017</item>
+        <item>Feel Good Inc</item>
+        <item>18137221</item>
+        <item>女神のKISS</item>
+        <item>495789</item>
+        <item>胡萝卜须</item>
+        <item>167651</item>
+        <item>庐州月</item>
+        <item>167850</item>
+        <item>Don't Stop (TheFatRat Remix)</item>
+        <item>27082740</item>
+        <item>Good bye (Chinese Ver.)</item>
+        <item>35437299</item>
+        <item>If I Die Young</item>
+        <item>28157586</item>
+        <item>Summer Vibe (Pegato Remix)</item>
+        <item>33522489</item>
+        <item>明天，你好</item>
+        <item>368727</item>
+        <item>I Could Be the One</item>
+        <item>19724606</item>
+        <item>让她降落</item>
+        <item>242603</item>
+        <item>Hey Jude</item>
+        <item>287565</item>
+        <item>The New Boy</item>
+        <item>3027830</item>
+        <item>Take Me Back</item>
+        <item>403012534</item>
+        <item>Jocelin</item>
+        <item>16532462</item>
+        <item>Wild World</item>
+        <item>1698589</item>
+        <item>Les Champs-Elysées</item>
+        <item>18578046</item>
+        <item>Take Me Back (Henri Pfr remix)</item>
+        <item>34152500</item>
+        <item>2 Heads</item>
+        <item>30621015</item>
+        <item>Vampire</item>
+        <item>36024033</item>
+        <item>It's Obvious</item>
+        <item>27899010</item>
+        <item>爱笑的眼睛</item>
+        <item>108245</item>
+        <item>蒲公英的约定</item>
+        <item>185815</item>
+        <item>Down</item>
+        <item>5039560</item>
+        <item>Forever Starts Tonight</item>
+        <item>27879263</item>
+        <item>Cruisin'</item>
+        <item>26335699</item>
+        <item>Crazy Bird</item>
+        <item>27845535</item>
+        <item>Wherever You Go</item>
+        <item>26233523</item>
+        <item>Fuerteventura</item>
+        <item>18680851</item>
+        <item>You Don't Know Me</item>
+        <item>399354184</item>
+        <item>Wooden Chair (feat. Marion Mayer) [Duo Version]</item>
+        <item>31090100</item>
+        <item>Puff, The Magic Dragon (Remastered LP Version)</item>
+        <item>18305108</item>
+        <item>Sleep/For The Weak (Lost Frequencies Remix)</item>
+        <item>399341408</item>
+        <item>Are You With Me</item>
+        <item>29806043</item>
+        <item>Reality</item>
+        <item>32835377</item>
+        <item>Eversleeping</item>
+        <item>20740864</item>
+        <item>Daydreamer (Original Mix)</item>
+        <item>35090300</item>
+        <item>Friends Of Mine</item>
+        <item>16310232</item>
+        <item>Sailing</item>
+        <item>5201809</item>
+        <item>Rhythm Of The Rain</item>
+        <item>18668453</item>
+        <item>Goodnight Moon</item>
+        <item>22563394</item>
+        <item>Larmes de caramel</item>
+        <item>17617362</item>
+        <item>Rock 'n' Roll Suicide</item>
+        <item>3950292</item>
+        <item>Big Jet Plane</item>
+        <item>1651747</item>
+        <item>Black Car</item>
+        <item>417833986</item>
+        <item>凉城</item>
+        <item>442314991</item>
+        <item>Escape (The Pina Colada Song)</item>
+        <item>28143757</item>
+        <item>Jesse James</item>
+        <item>1084391</item>
+        <item>世界に一つだけの花 (シングルヴァージョン)</item>
+        <item>817491</item>
+        <item>Anabel2</item>
+        <item>1084168</item>
+        <item>Closer To Me</item>
+        <item>26508116</item>
+        <item>Cabin Down Below</item>
+        <item>27792514</item>
+        <item>Black Mascara</item>
+        <item>27984050</item>
+        <item>Special</item>
+        <item>16951363</item>
+        <item>Hallelujah</item>
+        <item>444267834</item>
+        <item>A Thousand Kisses Deep</item>
+        <item>20954451</item>
+        <item>A Place Called You</item>
+        <item>27871272</item>
+        <item>Stay Alive</item>
+        <item>28143753</item>
+        <item>Heartbeats</item>
+        <item>2175282</item>
+        <item>So:Lo</item>
+        <item>2872271</item>
+        <item>You’ll Be Mine</item>
+        <item>27836503</item>
+        <item>Heart Of Gold</item>
+        <item>5195504</item>
+        <item>Waiting For Love</item>
+        <item>31356499</item>
+        <item>Tuesday</item>
+        <item>22281622</item>
+        <item>Sofía</item>
+        <item>409872465</item>
+        <item>Highway to Hell</item>
+        <item>3880720</item>
+        <item>Dirty Night Clowns</item>
+        <item>16966387</item>
+        <item>New Soul</item>
+        <item>19711382</item>
+        <item>I'm Getting Good At Missing You</item>
+        <item>27390873</item>
+        <item>I'll Have to Say I Love You in a Song</item>
+        <item>2795777</item>
+        <item>恋 (粤语版) (逃避虽可耻但有用主题曲)</item>
+        <item>455868528</item>
+        <item>Sealed With A Kiss(以吻封缄)</item>
+        <item>25730796</item>
+        <item>Heart Of Gold</item>
+        <item>18824409</item>
+        <item>Save You</item>
+        <item>1720034</item>
+        <item>I Got a Name</item>
+        <item>2795801</item>
+        <item>白日出没的月球</item>
+        <item>375173</item>
+        <item>It Never Rains In Southern California</item>
+        <item>16315182</item>
+        <item>The Clouds in Camarillo</item>
+        <item>1084273</item>
+        <item>恋（《逃避虽可耻但有用》ED）</item>
+        <item>454972513</item>
+        <item>Something Just Like This</item>
+        <item>461347998</item>
+        <item>Casablanca</item>
+        <item>5120906</item>
+        <item>We Are The World (Demo)</item>
+        <item>1697590</item>
+        <item>Then Silence</item>
+        <item>1617362</item>
+        <item>もう恋なんてしない</item>
+        <item>4895502</item>
+        <item>风になる</item>
+        <item>563815</item>
+        <item>Crying in the Rain</item>
+        <item>2424675</item>
+        <item>Going Home</item>
+        <item>3404770</item>
+        <item>Take Me Home Country Roads</item>
+        <item>1477670</item>
+        <item>When You Say Nothing At All</item>
+        <item>18940667</item>
+        <item>Sunny Day</item>
+        <item>2786189</item>
+        <item>Reality</item>
+        <item>1921734</item>
+        <item>Sunny</item>
+        <item>2195553</item>
+        <item>陪我看日出</item>
+        <item>210326</item>
+        <item>Casey's Last Ride</item>
+        <item>5043818</item>
+        <item>Sing Me to Sleep (Burak Yeter Remix)</item>
+        <item>456175358</item>
+        <item>爱如潮水 - live</item>
+        <item>187950</item>
+        <item>Strawberry letter 23</item>
+        <item>31352183</item>
+        <item>Es rappelt im Karton</item>
+        <item>29750825</item>
+        <item>Time To Say Goodbye</item>
+        <item>1313983</item>
+        <item>Ce Frumoasa E Iubirea</item>
+        <item>2698075</item>
+        <item>我赖你</item>
+        <item>450041299</item>
+        <item>Sing Me to Sleep</item>
+        <item>415792222</item>
+        <item>Father And Son</item>
+        <item>18824422</item>
+        <item>The Hunter</item>
+        <item>32507517</item>
+        <item>Coyotes</item>
+        <item>1890111</item>
+        <item>Way Back Into Love</item>
+        <item>5046372</item>
+        <item>被雨伤透</item>
+        <item>103153</item>
+        <item>That Moment Is Over</item>
+        <item>375420</item>
+        <item>好好（Cover五月天）</item>
+        <item>444356086</item>
+        <item>For Paolo</item>
+        <item>2083073</item>
+        <item>Olimpica</item>
+        <item>1890905</item>
+        <item>Peace Of Mind</item>
+        <item>16852271</item>
+        <item>Hit The Road Jack</item>
+        <item>1871846</item>
+        <item>Fortunate Son</item>
+        <item>20544892</item>
+        <item>Shadows Of The Night</item>
+        <item>22511847</item>
+        <item>Convoy</item>
+        <item>26878024</item>
+        <item>Highwayman</item>
+        <item>2030798</item>
+        <item>Far From Any Road (Main Title Theme from "True Detective")</item>
+        <item>28274294</item>
+        <item>Young Men Dead</item>
+        <item>3695239</item>
+        <item>Train Song</item>
+        <item>3796001</item>
+        <item>For the Good Times</item>
+        <item>1618606</item>
+        <item>Highwayman</item>
+        <item>18828614</item>
+        <item>Battles and Wastelands</item>
+        <item>21301195</item>
+        <item>我要你</item>
+        <item>437292675</item>
+        <item>She</item>
+        <item>4083642</item>
+        <item>雪</item>
+        <item>227012</item>
+        <item>玛卡瑞纳</item>
+        <item>25702070</item>
+        <item>男孩别哭</item>
+        <item>25731320</item>
+        <item>我很快乐</item>
+        <item>255294</item>
+        <item>Seve</item>
+        <item>30394891</item>
+        <item>I Want To Break Free</item>
+        <item>1868386</item>
+        <item>Killer Queen</item>
+        <item>27198673</item>
+        <item>Friends Will Be Friends (2011 Remaster)</item>
+        <item>29718176</item>
+        <item>Don't Stop Me Now</item>
+        <item>1868520</item>
+        <item>Bohemian Rhapsody</item>
+        <item>1868553</item>
+        <item>太早</item>
+        <item>126946</item>
+        <item>Another One Bites the Dust</item>
+        <item>1868486</item>
+        <item>借口</item>
+        <item>186002</item>
+        <item>国际歌</item>
+        <item>130133</item>
+        <item>花海</item>
+        <item>185697</item>
+        <item>彩虹</item>
+        <item>185809</item>
+        <item>Desperado</item>
+        <item>4049791</item>
+        <item>你讲的话(The Words You Say)</item>
+        <item>26425008</item>
+        <item>Imagine (Remastered 2010)</item>
+        <item>18687683</item>
+        <item>听妈妈的话</item>
+        <item>185879</item>
+        <item>如果你冷(live) - 2013海洋音乐节现场版</item>
+        <item>34923314</item>
+        <item>空も飞べるはず</item>
+        <item>816896</item>
+        <item>I Love It</item>
+        <item>27563878</item>
+        <item>空も飛べるはず</item>
+        <item>26608941</item>
+        <item>天天想你</item>
+        <item>26348068</item>
+        <item>Brave Love,TIGA (Brass Solo Version) </item>
+        <item>4968373</item>
+        <item>Brave Love,TIGA</item>
+        <item>4968398</item>
+        <item>외톨이야</item>
+        <item>5370718</item>
+        <item>你不像她</item>
+        <item>368760</item>
+        <item>下雨天</item>
+        <item>368764</item>
+        <item>Best Of Me (Album Version)</item>
+        <item>17271081</item>
+        <item>出发 (Live) - live</item>
+        <item>394648</item>
+        <item>黑暗骑士</item>
+        <item>25794008</item>
+        <item>亡命之徒(Live) - live</item>
+        <item>394488</item>
+        <item>Hey Jude</item>
+        <item>5097946</item>
+        <item>告白气球</item>
+        <item>418603077</item>
+        <item>好心分手</item>
+        <item>27713963</item>
+        <item>Free Loop</item>
+        <item>5253801</item>
+        <item>Graduation (Friends Forever) (LP Version)</item>
+        <item>19708323</item>
+        <item>사랑아 내게 오기만 해 (PartⅠ)</item>
+        <item>5410290</item>
+        <item>Variations on the Kanon: Variations On The Kanon by Pachelbel</item>
+        <item>17953856</item>
+        <item>派对动物</item>
+        <item>417953658</item>
+        <item>金色大街</item>
+        <item>386525</item>
+        <item>老情歌</item>
+        <item>28606468</item>
+        <item>追追追 (Live)</item>
+        <item>374794</item>
+        <item>无眠(国) (Live)</item>
+        <item>374826</item>
+        <item>上海一九四三</item>
+        <item>186128</item>
+        <item>爸我回来了</item>
+        <item>186116</item>
+        <item>从一片落叶开始</item>
+        <item>27731533</item>
+        <item>迟到千年</item>
+        <item>375382</item>
+        <item>喜欢寂寞</item>
+        <item>374605</item>
+        <item>相信</item>
+        <item>375184</item>
+        <item>再遇见</item>
+        <item>27678693</item>
+        <item>甘心</item>
+        <item>300035</item>
+        <item>半兽人</item>
+        <item>186045</item>
+        <item>我最亲爱的 (Live)</item>
+        <item>26075399</item>
+        <item>他夏了夏天</item>
+        <item>374910</item>
+        <item>声声慢</item>
+        <item>300038</item>
+        <item>与世隔绝</item>
+        <item>300027</item>
+        <item>Hymn For The Weekend [Remix]</item>
+        <item>419594258</item>
+        <item>退后</item>
+        <item>185884</item>
+        <item>半岛铁盒</item>
+        <item>186046</item>
+        <item>アヤノの幸福理論</item>
+        <item>28695643</item>
+        <item>Rather Be</item>
+        <item>28095742</item>
+        <item>Doing It Again</item>
+        <item>26633688</item>
+        <item>化身孤岛的鲸</item>
+        <item>30987882</item>
+        <item>プラネタリウム</item>
+        <item>632681</item>
+        <item>FLASH</item>
+        <item>406846048</item>
+        <item>コミュニケーション</item>
+        <item>796989</item>
+        <item>Magic Boul'vard</item>
+        <item>1347112</item>
+        <item>The Ludlows</item>
+        <item>18618065</item>
+        <item>大鱼</item>
+        <item>413812448</item>
+        <item>500 miles</item>
+        <item>2004450</item>
+        <item>If You Want Me</item>
+        <item>31745039</item>
+        <item>海芋恋</item>
+        <item>168039</item>
+        <item>张三的歌</item>
+        <item>34614284</item>
+        <item>Shape Of My Heart</item>
+        <item>1934649</item>
+        <item>COOLEST</item>
+        <item>410821967</item>
+        <item>流れる雲よりもはやく (カラオケ)</item>
+        <item>610820</item>
+        <item>september</item>
+        <item>22711277</item>
+        <item>September</item>
+        <item>4051656</item>
+        <item>Top Of The World</item>
+        <item>3986342</item>
+        <item>Yesterday Once More</item>
+        <item>3986241</item>
+        <item>超人不会飞</item>
+        <item>185686</item>
+        <item>七里香</item>
+        <item>186001</item>
+        <item>Take It Easy</item>
+        <item>4049832</item>
+        <item>Hotel California</item>
+        <item>26289183</item>
+        <item>开不了口</item>
+        <item>186125</item>
+        <item>보여줄게</item>
+        <item>26128872</item>
+        <item>secret base ~君がくれたもの~ (10 years after Ver.)</item>
+        <item>33911781</item>
+        <item>轨迹</item>
+        <item>186010</item>
+        <item>THE HERO !! ~怒れる拳に火をつけろ~</item>
+        <item>35806019</item>
+        <item>生存以上 生活以下(Live) - live</item>
+        <item>385737</item>
+        <item>孙悟空 (Ver. All Crew Out)(Live) - live</item>
+        <item>385746</item>
+        <item>真的爱你</item>
+        <item>346075</item>
+        <item>Heaven's boulevard</item>
+        <item>38358271</item>
+        <item>誰か私を</item>
+        <item>28240070</item>
+        <item>For フルーツバスケット</item>
+        <item>632485</item>
+        <item>我都跟你走</item>
+        <item>29429851</item>
+        <item>Fix You</item>
+        <item>3986326</item>
+        <item>See You Again</item>
+        <item>3028966</item>
+        <item>小さな恋のうた</item>
+        <item>25941745</item>
+        <item>小さな恋のうた</item>
+        <item>22781103</item>
+        <item>START ME UP</item>
+        <item>31654663</item>
+        <item>可能性</item>
+        <item>32098906</item>
+        <item>Brand New Day</item>
+        <item>38358277</item>
+        <item>我心中尚未崩坏的地方(Live) - live</item>
+        <item>385744</item>
+        <item>你不是真正的快乐(Live) - live</item>
+        <item>385736</item>
+        <item>十年一刻 (诺基亚版)</item>
+        <item>374873</item>
+        <item>控制狂</item>
+        <item>374618</item>
+        <item>带我走</item>
+        <item>27946612</item>
+        <item>狂热</item>
+        <item>374950</item>
+        <item>小さな恋のうた</item>
+        <item>550234</item>
+        <item>夜的第七章</item>
+        <item>185878</item>
+        <item>她的睫毛</item>
+        <item>186021</item>
+        <item>一路向北</item>
+        <item>185924</item>
+        <item>Zezé</item>
+        <item>35847040</item>
+        <item>你就是我想要的丫头</item>
+        <item>141609</item>
+        <item>さくら</item>
+        <item>28283665</item>
+        <item>いけないボーダーライン</item>
+        <item>41629793</item>
+        <item>惊叹号(Live)</item>
+        <item>411921852</item>
+        <item>周一的清晨还在下雨</item>
+        <item>26145727</item>
+        <item>冷雨夜</item>
+        <item>346069</item>
+        <item>成都(cover原唱赵雷)</item>
+        <item>406000524</item>
+        <item>叶子</item>
+        <item>5260491</item>
+        <item>易燃易爆炸</item>
+        <item>30431376</item>
+        <item>光</item>
+        <item>30431364</item>
+        <item>下个星期去英国</item>
+        <item>209129</item>
+        <item>如果云知道</item>
+        <item>307514</item>
+        <item>Viva La Vida</item>
+        <item>3986017</item>
+        <item>少女的祈祷(Live) - live</item>
+        <item>317251</item>
+        <item>ラブ・ストーリーは突然に</item>
+        <item>487618</item>
+        <item>都是夜归人</item>
+        <item>306967</item>
+        <item>城里的月光</item>
+        <item>307043</item>
+        <item>她来听我的演唱会</item>
+        <item>188647</item>
+        <item>女儿情</item>
+        <item>27538254</item>
+        <item>李香兰</item>
+        <item>188703</item>
+        <item>遥远的她</item>
+        <item>191232</item>
+        <item>Another Brick in the Wall, Pt. 2</item>
+        <item>4237803</item>
+        <item>我只在乎你(Live) - live</item>
+        <item>375099</item>
+        <item>我真的受伤了 - live</item>
+        <item>187977</item>
+        <item>突然好想你(Live) - live</item>
+        <item>385753</item>
+        <item>心如刀割 (Live) - live</item>
+        <item>27090742</item>
+        <item>妈妈</item>
+        <item>26523123</item>
+        <item>温柔 (2013混音版)</item>
+        <item>28181131</item>
+        <item>Fade</item>
+        <item>29947420</item>
+        <item>我的未来不是梦</item>
+        <item>375300</item>
+        <item>是我的海</item>
+        <item>375423</item>
+    </string-array>
 </resources>
