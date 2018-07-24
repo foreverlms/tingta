@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by bob on 2018/7/23.
  */
 
-public class HistoryAndRecommendationSQLiteOpenHelper extends SQLiteOpenHelper{
+public class HistoryAndRecommendationSQLiteOpenHelper extends SQLiteOpenHelper {
 
     //数据库tingta
     private static final String DATA_BASE_NAME = "tingta";
@@ -21,16 +21,17 @@ public class HistoryAndRecommendationSQLiteOpenHelper extends SQLiteOpenHelper{
     private static final String NICK_NAME = "name";
 
     //创建history表
-    private static final String HISTORY_TABLE_CREATE = "CREATE TABLE"+HISTORY_TABLE+"("+NICK_NAME_ID+
-            "INTEGER PRIMARY KEY, "+ NICK_NAME+"TEXT);";
+    private static final String HISTORY_TABLE_CREATE = "CREATE TABLE" + HISTORY_TABLE + "(" + NICK_NAME_ID +
+            "INTEGER PRIMARY KEY, " + NICK_NAME + "TEXT);";
 
 
     private SQLiteDatabase mWritableDB;
     private SQLiteDatabase mReadableDB;
 
-    public HistoryAndRecommendationSQLiteOpenHelper(Context context){
-        super(context,DATA_BASE_NAME,null,1);
+    public HistoryAndRecommendationSQLiteOpenHelper(Context context) {
+        super(context, DATA_BASE_NAME, null, 1);
     }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(HISTORY_TABLE_CREATE);

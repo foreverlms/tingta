@@ -14,7 +14,7 @@ import android.view.MotionEvent;
 public class CustomEditText extends android.support.v7.widget.AppCompatEditText {
     private Drawable clearIcon;
 
-    public CustomEditText(Context context){
+    public CustomEditText(Context context) {
         super(context);
         init();
     }
@@ -42,15 +42,15 @@ public class CustomEditText extends android.support.v7.widget.AppCompatEditText 
     @Override
     protected void onFocusChanged(boolean focused, int direction, Rect previouslyFocusedRect) {
         super.onFocusChanged(focused, direction, previouslyFocusedRect);
-        setClearIconVisible(focused && length() >0 );
+        setClearIconVisible(focused && length() > 0);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()){
+        switch (event.getAction()) {
             case MotionEvent.ACTION_UP:
                 Drawable drawable = clearIcon;
-                if (drawable != null && event.getX() <= (getWidth()-getPaddingRight()) && event.getX() >= (getWidth()-getPaddingRight()-drawable.getBounds().width())){
+                if (drawable != null && event.getX() <= (getWidth() - getPaddingRight()) && event.getX() >= (getWidth() - getPaddingRight() - drawable.getBounds().width())) {
                     setText("");
                 }
                 break;
@@ -58,7 +58,7 @@ public class CustomEditText extends android.support.v7.widget.AppCompatEditText 
         return super.onTouchEvent(event);
     }
 
-    private void setClearIconVisible(boolean isVisible){
-        setCompoundDrawablesWithIntrinsicBounds(null,null,isVisible ? clearIcon : null,null);
+    private void setClearIconVisible(boolean isVisible) {
+        setCompoundDrawablesWithIntrinsicBounds(null, null, isVisible ? clearIcon : null, null);
     }
 }

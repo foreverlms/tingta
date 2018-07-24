@@ -12,20 +12,21 @@ import android.widget.Toast;
 @Deprecated
 public class NickNameFoundReceiver extends BroadcastReceiver {
 
-    private static final String NICKNAME_FOUND_ACTION="NETEASEMUSICUSERNAMEFOUND";
+    private static final String NICKNAME_FOUND_ACTION = "NETEASEMUSICUSERNAMEFOUND";
+
     @Override
     public void onReceive(Context context, Intent intent) {
         // TODO: This method is called when the BroadcastReceiver is receiving
         // an Intent broadcast.
         String action = intent.getAction();
-        switch (action){
+        switch (action) {
             case NICKNAME_FOUND_ACTION:
                 String nickname = intent.getStringExtra("nickname");
-                showResult(context,nickname);
+                showResult(context, nickname);
         }
     }
 
-    private void showResult(Context context, String nickname){
-        Toast.makeText(context,nickname,Toast.LENGTH_LONG).show();
+    private void showResult(Context context, String nickname) {
+        Toast.makeText(context, nickname, Toast.LENGTH_LONG).show();
     }
 }

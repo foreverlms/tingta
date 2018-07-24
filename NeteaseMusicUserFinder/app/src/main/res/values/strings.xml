@@ -6,12 +6,14 @@
     <string-array name="songs">
         <item>有心人</item>
         <item>29343372</item>
-        <item>I'm Your Man</item>
+        <item>I\'m Your Man</item>
         <item>20954632</item>
         <item>(Youre The)Love Of My Life</item>
         <item>5201812</item>
         <item>奇妙能力歌</item>
         <item>30431366</item>
+        <item>我的秘密</item>
+        <item>233974</item>
         <item>记念(Live)</item>
         <item>29122982</item>
         <item>借我</item>
@@ -44,7 +46,7 @@
         <item>109734</item>
         <item>Nothing’s Changed</item>
         <item>31517171</item>
-        <item>Nobody Loves You (When You're Down And Out)</item>
+        <item>Nobody Loves You (When You\'re Down And Out)</item>
         <item>1475363</item>
         <item>Oh My Love</item>
         <item>1475050</item>
@@ -92,7 +94,7 @@
         <item>22748787</item>
         <item>Closer</item>
         <item>4330176</item>
-        <item>Sittin' Here In Silence (On My Own)</item>
+        <item>Sittin\' Here In Silence (On My Own)</item>
         <item>17822810</item>
         <item>Teenage Life</item>
         <item>1231775</item>
@@ -102,7 +104,7 @@
         <item>25788001</item>
         <item>当我们一起走过</item>
         <item>374612</item>
-        <item>That Wasn't Me</item>
+        <item>That Wasn\'t Me</item>
         <item>16783851</item>
         <item>The Story</item>
         <item>16783822</item>
@@ -122,7 +124,7 @@
         <item>530801983</item>
         <item>On a Slow Boat to China</item>
         <item>27591140</item>
-        <item>Promises Don't Come Easy</item>
+        <item>Promises Don\'t Come Easy</item>
         <item>5197154</item>
         <item>Brother Louie</item>
         <item>4175444</item>
@@ -210,9 +212,9 @@
         <item>451536969</item>
         <item>Right Here Waiting</item>
         <item>3313653</item>
-        <item>Nothing's Gonna Change My Love For You</item>
+        <item>Nothing\'s Gonna Change My Love For You</item>
         <item>2080326</item>
-        <item>3 O'clock in the Morning</item>
+        <item>3 O\'clock in the Morning</item>
         <item>1519879</item>
         <item>Four To The Floor</item>
         <item>22622207</item>
@@ -232,9 +234,9 @@
         <item>452620634</item>
         <item>Hero</item>
         <item>28784401</item>
-        <item>Love Me Like There's No Tomorrow</item>
+        <item>Love Me Like There\'s No Tomorrow</item>
         <item>1348599</item>
-        <item>I Don't Mind If You Don't Mind</item>
+        <item>I Don\'t Mind If You Don\'t Mind</item>
         <item>27472194</item>
         <item>Clouds</item>
         <item>26418207</item>
@@ -250,7 +252,7 @@
         <item>21529442</item>
         <item>Die Internationale</item>
         <item>18267037</item>
-        <item>Knockin' On Heaven's Door</item>
+        <item>Knockin\' On Heaven\'s Door</item>
         <item>18095057</item>
         <item>Relax, Take It Easy</item>
         <item>21151698</item>
@@ -278,7 +280,7 @@
         <item>167651</item>
         <item>庐州月</item>
         <item>167850</item>
-        <item>Don't Stop (TheFatRat Remix)</item>
+        <item>Don\'t Stop (TheFatRat Remix)</item>
         <item>27082740</item>
         <item>Good bye (Chinese Ver.)</item>
         <item>35437299</item>
@@ -310,7 +312,7 @@
         <item>30621015</item>
         <item>Vampire</item>
         <item>36024033</item>
-        <item>It's Obvious</item>
+        <item>It\'s Obvious</item>
         <item>27899010</item>
         <item>爱笑的眼睛</item>
         <item>108245</item>
@@ -320,7 +322,7 @@
         <item>5039560</item>
         <item>Forever Starts Tonight</item>
         <item>27879263</item>
-        <item>Cruisin'</item>
+        <item>Cruisin\'</item>
         <item>26335699</item>
         <item>Crazy Bird</item>
         <item>27845535</item>
@@ -328,7 +330,7 @@
         <item>26233523</item>
         <item>Fuerteventura</item>
         <item>18680851</item>
-        <item>You Don't Know Me</item>
+        <item>You Don\'t Know Me</item>
         <item>399354184</item>
         <item>Wooden Chair (feat. Marion Mayer) [Duo Version]</item>
         <item>31090100</item>
@@ -354,7 +356,7 @@
         <item>22563394</item>
         <item>Larmes de caramel</item>
         <item>17617362</item>
-        <item>Rock 'n' Roll Suicide</item>
+        <item>Rock \'n\' Roll Suicide</item>
         <item>3950292</item>
         <item>Big Jet Plane</item>
         <item>1651747</item>
@@ -406,9 +408,9 @@
         <item>16966387</item>
         <item>New Soul</item>
         <item>19711382</item>
-        <item>I'm Getting Good At Missing You</item>
+        <item>I\'m Getting Good At Missing You</item>
         <item>27390873</item>
-        <item>I'll Have to Say I Love You in a Song</item>
+        <item>I\'ll Have to Say I Love You in a Song</item>
         <item>2795777</item>
         <item>恋 (粤语版) (逃避虽可耻但有用主题曲)</item>
         <item>455868528</item>
@@ -456,7 +458,7 @@
         <item>2195553</item>
         <item>陪我看日出</item>
         <item>210326</item>
-        <item>Casey's Last Ride</item>
+        <item>Casey\'s Last Ride</item>
         <item>5043818</item>
         <item>Sing Me to Sleep (Burak Yeter Remix)</item>
         <item>456175358</item>
@@ -536,7 +538,7 @@
         <item>27198673</item>
         <item>Friends Will Be Friends (2011 Remaster)</item>
         <item>29718176</item>
-        <item>Don't Stop Me Now</item>
+        <item>Don\'t Stop Me Now</item>
         <item>1868520</item>
         <item>Bohemian Rhapsody</item>
         <item>1868553</item>
@@ -546,8 +548,6 @@
         <item>1868486</item>
         <item>借口</item>
         <item>186002</item>
-        <item>国际歌</item>
-        <item>130133</item>
         <item>花海</item>
         <item>185697</item>
         <item>彩虹</item>
@@ -658,7 +658,7 @@
         <item>406846048</item>
         <item>コミュニケーション</item>
         <item>796989</item>
-        <item>Magic Boul'vard</item>
+        <item>Magic Boul\'vard</item>
         <item>1347112</item>
         <item>The Ludlows</item>
         <item>18618065</item>
@@ -710,7 +710,7 @@
         <item>385746</item>
         <item>真的爱你</item>
         <item>346075</item>
-        <item>Heaven's boulevard</item>
+        <item>Heaven\'s boulevard</item>
         <item>38358271</item>
         <item>誰か私を</item>
         <item>28240070</item>
