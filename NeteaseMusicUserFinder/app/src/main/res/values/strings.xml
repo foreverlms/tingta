@@ -2,6 +2,8 @@
     <string name="app_name">听ta</string>
     <string name="toast_message_for_no_internet">联网后再试吧~~</string>
     <string name="hint_for_linkEditText">粘贴已有网易云歌曲微信分享链接</string>
+    <string name="delete">删除</string>
+    <string name="copy">复制</string>
 
     <string-array name="songs">
         <item>有心人</item>

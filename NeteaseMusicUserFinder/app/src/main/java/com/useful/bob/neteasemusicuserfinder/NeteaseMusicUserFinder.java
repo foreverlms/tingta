@@ -18,6 +18,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -38,6 +39,8 @@ public class NeteaseMusicUserFinder extends AsyncTask<Uri,Void,String> {
     //总是提示会导致内存泄漏，可是我现在觉得就一个应该没事儿
     private MainActivity activity;
 
+    private HistoryAndRecommendationSQLiteOpenHelper mDB;
+
     //随机选择一个USER-AGENT
     private static final List<String> USER_AGENTS = new ArrayList(){
         {
@@ -49,16 +52,20 @@ public class NeteaseMusicUserFinder extends AsyncTask<Uri,Void,String> {
         }
     };
 
+    public NeteaseMusicUserFinder(WeakReference<MainActivity> ref){
+        this.activity = (MainActivity) ref.get();
+        this.mDB = new HistoryAndRecommendationSQLiteOpenHelper(activity.getApplicationContext());
+    }
+
     public NeteaseMusicUserFinder(MainActivity activity){
         this.activity = activity;
     }
-
     @Override
     protected String doInBackground(Uri... uris) {
         String sourcepage=null;
         String userAgent = USER_AGENTS.get(new Random().nextInt(USER_AGENTS.size()));
         URL requestUrl = null;
-        HttpURLConnection httpsURLConnection = null;
+        HttpURLConnection httpURLConnection = null;
         BufferedReader bufferedReader = null;
         try {
             requestUrl =new URL(uris[0].toString());
@@ -66,25 +73,40 @@ public class NeteaseMusicUserFinder extends AsyncTask<Uri,Void,String> {
             e.printStackTrace();
         }
         try {
-            httpsURLConnection = (HttpURLConnection) requestUrl.openConnection();
-            httpsURLConnection.setRequestMethod("GET");
-            httpsURLConnection.addRequestProperty("User-Agent",userAgent);
-            httpsURLConnection.connect();
-            if (httpsURLConnection.getResponseCode() == 200){
-                InputStream inputStream = httpsURLConnection.getInputStream();
-                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                String line;
-                StringBuilder tmp = new StringBuilder();
-                while ((line = bufferedReader.readLine()) != null){
-                    tmp.append(line);
-                }
-                sourcepage = tmp.toString();
+            httpURLConnection = (HttpURLConnection) requestUrl.openConnection();
+            httpURLConnection.setRequestMethod("GET");
+            httpURLConnection.setInstanceFollowRedirects(true);
+            httpURLConnection.addRequestProperty("User-Agent",userAgent);
+            httpURLConnection.connect();
+            int code = httpURLConnection.getResponseCode();
+            String location = null;
+
+            if (code == 302 || code == 301){
+                location = httpURLConnection.getHeaderField("Location");
             }
+            if (location != null){
+                httpURLConnection = (HttpURLConnection) new URL(location).openConnection();
+                httpURLConnection.setRequestMethod("GET");
+                httpURLConnection.setInstanceFollowRedirects(true);
+                httpURLConnection.addRequestProperty("User-Agent",userAgent);
+                httpURLConnection.connect();
+            }
+
+            InputStream inputStream = httpURLConnection.getInputStream();
+            Log.d("INPUT_STREAM",String.valueOf(inputStream == null));
+            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            String line;
+            StringBuilder tmp = new StringBuilder();
+            while ((line = bufferedReader.readLine()) != null){
+                tmp.append(line);
+                Log.d("LINE",line);
+            }
+            sourcepage = tmp.toString();
         }catch (IOException e){
             e.printStackTrace();
         }finally {
-            if (httpsURLConnection != null){
-                httpsURLConnection.disconnect();
+            if (httpURLConnection != null){
+                httpURLConnection.disconnect();
             }
             if (bufferedReader != null){
                 try {
@@ -94,22 +116,37 @@ public class NeteaseMusicUserFinder extends AsyncTask<Uri,Void,String> {
                 }
             }
         }
+
+
+
         return getNickName(sourcepage);
     }
 
     private String getNickName(String sourcepage){
+
+
         Document document = Jsoup.parse(sourcepage);
         //DOM昵称元素选择
-        Element span = document.select("#j-name-wrap > span.tit.f-ff2.s-fc0.f-thide").first();
-        return span.text();
+//        Element span = document.select("#j-name-wrap > span.tit.f-ff2.s-fc0.f-thide").first();
+        Element meta = document.select("meta[name=keywords]").first();
+        String content = meta.attr("content");
+        String nickName = content.split("，")[0];
+
+        mDB.insert(nickName);
+
+        return nickName;
     }
     @Override
     protected void onPostExecute(String s) {
-        final String nickname = s;
         super.onPostExecute(s);
+        if (s == null){
+            Toast.makeText(activity,"可能无法正确连接网络，稍后再试~~",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        final String nickname = s;
         final AlertDialog.Builder dialog = new AlertDialog.Builder(activity);
         dialog.setTitle("You deserve it!")
-                .setMessage("该网易云音乐用户名："+s)
+                .setMessage("该网易云音乐用户名：\n"+s)
                 .setPositiveButton("复制至剪贴板", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

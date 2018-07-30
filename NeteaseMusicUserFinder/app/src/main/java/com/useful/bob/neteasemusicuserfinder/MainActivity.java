@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 
 import com.sackcentury.shinebuttonlib.ShineButton;
 
+import java.lang.ref.WeakReference;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -169,8 +171,9 @@ public class MainActivity extends AppCompatActivity {
             //举例：http://music.163.com/user/home?id=%d{9}
             Uri homeUri = Uri.parse(BASE_URL).buildUpon()
                     .appendQueryParameter(USERID, id).build();
-
-            NeteaseMusicUserFinder neteaseMusicUserFinder = new NeteaseMusicUserFinder(this);
+            WeakReference<MainActivity> ref = new WeakReference<MainActivity>(this);
+            NeteaseMusicUserFinder neteaseMusicUserFinder = new NeteaseMusicUserFinder(ref);
+//            NeteaseMusicUserFinder neteaseMusicUserFinder = new NeteaseMusicUserFinder(this);
             neteaseMusicUserFinder.execute(homeUri);
         } else {
             Toast.makeText(this, R.string.toast_message_for_no_internet, Toast.LENGTH_SHORT).show();

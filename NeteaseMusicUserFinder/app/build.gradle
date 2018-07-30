@@ -26,6 +26,7 @@ dependencies {
     implementation 'com.android.support:design:26.0.0-beta1'
     compile 'com.android.support:recyclerview-v7:26.0.0-beta1'
     compile 'com.android.support:design:26.0.0-beta1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-beta1'
     compile 'com.sackcentury:shinebutton:0.2.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     testImplementation 'junit:junit:4.12'
