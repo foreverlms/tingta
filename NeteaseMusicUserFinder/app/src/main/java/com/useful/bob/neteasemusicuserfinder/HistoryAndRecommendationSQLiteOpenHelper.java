@@ -121,4 +121,16 @@ public class HistoryAndRecommendationSQLiteOpenHelper extends SQLiteOpenHelper {
 
         return cursor;
     }
+    public boolean contains(String nickName){
+        String queryS = "SELECT COUNT(*) FROM "+HISTORY_TABLE+" WHERE "+NICK_NAME+"=?";
+        if (mReadableDB == null){
+            mReadableDB=getReadableDatabase();
+        }
+
+        Cursor cursor = mReadableDB.rawQuery(queryS,new String[]{nickName});
+        cursor.moveToFirst();
+        int count = cursor.getInt(0);
+        cursor.close();
+        return count > 0;
+    }
 }

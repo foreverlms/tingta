@@ -132,7 +132,11 @@ public class NeteaseMusicUserFinder extends AsyncTask<Uri,Void,String> {
         String content = meta.attr("content");
         String nickName = content.split("，")[0];
 
-        mDB.insert(nickName);
+        if (!mDB.contains(nickName)){
+            mDB.insert(nickName);
+        }
+
+//        mDB.close();
 
         return nickName;
     }
