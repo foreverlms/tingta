@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         if (info != null && info.isConnected()) {
             String id;
             String uri = linkEditText.getText().toString();
-            String pattern = "^https?://y\\.music\\.163\\.com/m/song\\?id=\\d+&userid=(\\d+)&\\w+";
+            String pattern = "^https?://y\\.music\\.163\\.com/m/song(?:\\?id=|/)?\\d+(?:&|/\\?)userid=(\\d+)&\\w+";
             Pattern mPattern = Pattern.compile(pattern);
             Matcher matcher = mPattern.matcher(uri);
             if (!matcher.find() || uri.isEmpty()) {
